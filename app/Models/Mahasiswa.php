@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mahasiswa extends Model
 {
-    use HasFactory;
+    // use HasFactory;
 
     protected $table = "mahasiswas"; 
     public $timestamps = false;
@@ -18,9 +18,10 @@ class Mahasiswa extends Model
         'Nim',
         'Nama',
         'Tanggal_Lahir',
-        'Kelas',
+        'kelas_id',
         'Jurusan',
         'No_Handphone',
         'Email',
+        
     ];
 }
